@@ -1,5 +1,5 @@
 <script setup>
-import AppStartupPageTopbar from './components/StartupPageTopbar/StartupPageTopbar.vue'
+import AppStartupPageTopbar from './components/startup-page-topbar/StartupPageTopbar.vue'
 
 </script>
 
@@ -8,7 +8,9 @@ import AppStartupPageTopbar from './components/StartupPageTopbar/StartupPageTopb
         <div>
             <AppStartupPageTopbar />
         </div>
-        <div></div>
+        <div>
+
+        </div>
         <div></div>
     </div>
 </template>
