@@ -1,10 +1,14 @@
 <script setup lang="ts">
-
+import HorseRaceGameHorseList from '../horse-race-game-horse-list/HorseRaceGameHorseList.vue'
 </script>
 
 <template>
-    <div>
-        <div></div>
+    <div class="flex h-full">
+        <div class="w-86">
+            <HorseRaceGameHorseList />
+        </div>
+        <div class="grow">Game Area</div>
+        <div class="w-86">Stats</div>
     </div>
 </template>
 

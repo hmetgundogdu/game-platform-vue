@@ -16,4 +16,9 @@ import '../../styles/game-font-definition.css';
 
 
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+* {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+</style>
