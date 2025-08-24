@@ -15,6 +15,8 @@ const updateClockContent = () => {
 }
 
 onMounted(() => {
+    updateClockContent();
+
     interval = setInterval(updateClockContent, REFRESH_TIME_MS);
 });
 

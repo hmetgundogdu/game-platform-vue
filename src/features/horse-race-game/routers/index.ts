@@ -1,6 +1,6 @@
 export default [
     {
-        path: '/horse-race-game',
+        path: '/games/horse-race-game',
         component: () => import('../pages/horse-game-page/HorseGamePage.vue'),
     },
 ]
