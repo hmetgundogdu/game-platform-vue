@@ -1,18 +1,20 @@
 <script setup>
-import AppStartupPageTopbar from './components/startup-page-topbar/StartupPageTopbar.vue'
-import AppStartupPageGamesFlatList from './components/startup-page-games-flat-list/AppStartupPageGamesFlatList.vue'
+import StartupPageTopbar from './components/startup-page-topbar/StartupPageTopbar.vue'
+import StartupPageGamesFlatList from './components/startup-page-games-flat-list/StartupPageGamesFlatList.vue'
+import StartupPageSelectedGameHero from './components/startup-page-selected-game-hero/StartupPageSelectedGameHero.vue';
 
 </script>
 
 <template>
     <div class="startup-container">
         <div class=" px-[10%]">
-            <AppStartupPageTopbar />
+            <StartupPageTopbar />
         </div>
         <div class="mt-1">
-            <AppStartupPageGamesFlatList />
+            <StartupPageGamesFlatList />
         </div>
         <div>
+            <StartupPageSelectedGameHero />
         </div>
     </div>
 </template>
