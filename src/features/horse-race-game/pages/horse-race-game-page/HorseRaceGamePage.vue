@@ -5,12 +5,14 @@ import '../../styles/game-font-definition.css';
 
 </script>
 
-<template class="flex flex-col w-full">
-    <div>
-        <HorseRaceGameHeader />
-    </div>
-    <div>
-        <HorseRaceGameArea />
+<template>
+    <div class="flex flex-col h-[1000px]">
+        <div>
+            <HorseRaceGameHeader />
+        </div>
+        <div class="grow">
+            <HorseRaceGameArea />
+        </div>
     </div>
 </template>
 

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="bg-amber-200 h-full">
         <slot />
     </div>
 </template>
