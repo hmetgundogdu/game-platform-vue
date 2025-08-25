@@ -1,5 +1,31 @@
-# Vue 3 + TypeScript + Vite
+# Game Platform (Vue)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vue 3 + TypeScript + Vite tabanlı **mini oyun platformu**.  
+İlk oyun olarak **At Yarışı (Horse Race Game)** geliştirilmiştir.  
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Özellikler
+
+- Vue 3 + Vite + TypeScript
+- Feature-based dosya yapısı
+- Vuex ile durum yönetimi
+- Yeniden kullanılabilir UI bileşenleri
+- At Yarışı oyunu:
+  - 20 at havuzu
+  - Rastgele seçilen 10 at ile 6 turluk yarış
+  - Canlı animasyon ve sonuç tablosu
+
+## Önizleme
+
+![App Screenshot](./docs/screenshot.png)
+
+## Kurulum
+
+```bash
+
+# Bağımlılıkları yükle
+
+yarn
+
+# Geliştirme sunucusu
+
+yarn dev
