@@ -12,8 +12,6 @@ const props = defineProps<{
     classNames?: ClassNames
 }>()
 
-const items = props.items
-
 </script>
 
 <template>
@@ -22,7 +20,7 @@ const items = props.items
             <slot name="header" />
         </thead>
         <tbody :class="['simple-table-tbody', classNames?.tbody]">
-            <template v-for="(item, i) in items" :key="i">
+            <template v-for="(item, i) in props.items" :key="i">
                 <slot name="row" :item="item" :index="i" />
             </template>
         </tbody>

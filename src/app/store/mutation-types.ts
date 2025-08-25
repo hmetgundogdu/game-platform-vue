@@ -1,0 +1,1 @@
+export { HorseRaceGameMutationTypes } from '@/features/horse-race-game/store/mutation-types'
