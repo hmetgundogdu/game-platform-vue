@@ -16,7 +16,7 @@ Vue 3 + TypeScript + Vite tabanlı **mini oyun platformu**.
 
 ## Önizleme
 
-![App Screenshot](./docs/screenshot.png)
+![App Screenshot](https://github.com/hmetgundogdu/game-platform-vue/blob/main/docs/screenshots/screenshot.png)
 
 ## Kurulum
 
