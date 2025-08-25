@@ -1,0 +1,78 @@
+.hrg-scroll {
+  /* Deri/Brass (varsayılan) */
+  --scroll-track: #0b1220;         /* koyu lacivert/kulvar zemin */
+  --scroll-thumb: #b68a3a;         /* pirinç/bronze */
+  --scroll-thumb-hover: #d9a84a;
+  --scroll-thumb-active: #936f2f;
+  --scroll-border: #1f2937;        /* slate-800 */
+  --scroll-corner: transparent;
+
+  /* Davranış */
+  scrollbar-width: thin;                 /* Firefox */
+  scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+  position: relative;                    /* fade mask için */
+}
+
+/* Arcade/Neon varyantı */
+.hrg-scroll.hrg-scroll--neon {
+  --scroll-track: #0a0a0a;
+  --scroll-thumb: #22d3ee;        /* cyan */
+  --scroll-thumb-hover: #67e8f9;
+  --scroll-thumb-active: #06b6d4;
+  --scroll-border: #111827;
+}
+
+/* Sadece yatay içerikli alan için küçük bir iyileştirme */
+.hrg-scroll.hrg-scroll--x {
+  white-space: nowrap;
+}
+
+/* ====== WEBKIT (Chrome/Edge/Safari) ====== */
+.hrg-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.hrg-scroll::-webkit-scrollbar-track {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(0,0,0,.22)),
+    var(--scroll-track);
+  border-radius: 9999px;
+  box-shadow: inset 0 0 0 1px var(--scroll-border);
+}
+
+.hrg-scroll::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background:
+    radial-gradient(120% 120% at 30% 25%, rgba(255,255,255,.25), transparent 60%),
+    linear-gradient(180deg, var(--scroll-thumb), color-mix(in hsl, var(--scroll-thumb), black 20%));
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.09),
+    0 1px 2px rgba(0,0,0,.6);
+  border: 2px solid color-mix(in hsl, var(--scroll-track), transparent 40%);
+}
+.hrg-scroll:hover::-webkit-scrollbar-thumb {
+  background:
+    radial-gradient(120% 120% at 30% 25%, rgba(255,255,255,.3), transparent 60%),
+    linear-gradient(180deg, var(--scroll-thumb-hover), color-mix(in hsl, var(--scroll-thumb-hover), black 18%));
+}
+.hrg-scroll::-webkit-scrollbar-thumb:active {
+  background:
+    radial-gradient(120% 120% at 30% 25%, rgba(255,255,255,.2), transparent 60%),
+    linear-gradient(180deg, var(--scroll-thumb-active), color-mix(in hsl, var(--scroll-thumb-active), black 22%));
+}
+
+/* Köşe (hem yatay hem dikey varsa) */
+.hrg-scroll::-webkit-scrollbar-corner { background: var(--scroll-corner); }
+
+/* ====== GİZLİ SCROLL (hover’da ortaya çıkar) ====== */
+.hrg-scroll.hrg-scroll--reveal::-webkit-scrollbar {
+  width: 0; height: 0;
+  transition: width .2s ease, height .2s ease;
+}
+.hrg-scroll.hrg-scroll--reveal:hover::-webkit-scrollbar {
+  width: 10px; height: 10px;
+}
+/* Firefox’ta gizle */
+.hrg-scroll.hrg-scroll--reveal { scrollbar-width: none; }
+.hrg-scroll.hrg-scroll--reveal:hover { scrollbar-width: thin; }

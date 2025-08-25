@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HorseRaceGameHorseList from '../horse-race-game-horse-list/HorseRaceGameHorseList.vue'
+import HorceRaceGameRaceArea from '../horse-race-game-race-area/HorceRaceGameRaceArea.vue';
 </script>
 
 <template>
@@ -7,7 +8,9 @@ import HorseRaceGameHorseList from '../horse-race-game-horse-list/HorseRaceGameH
         <div class="w-86">
             <HorseRaceGameHorseList />
         </div>
-        <div class="grow">Game Area</div>
+        <div class="grow">
+            <HorceRaceGameRaceArea />
+        </div>
         <div class="w-86">Stats</div>
     </div>
 </template>

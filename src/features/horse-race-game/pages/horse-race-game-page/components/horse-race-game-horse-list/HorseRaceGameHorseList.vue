@@ -13,14 +13,47 @@ import { ref } from 'vue';
 const rows = ref([
     { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
     { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
-    { id: 4, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
+    { id: 1, horse: { name: "Şimşek" }, condition: 92, color: "#ff2bd8" },
+    { id: 2, horse: { name: "Yıldırım" }, condition: 67, color: "#7c3aed" },
+    { id: 3, horse: { name: "Kasırga" }, condition: 48, color: "#22d3ee" },
 ]);
 
 </script>
 
 <template>
-    <HorseRaceGameCard class="h-full">
-        <HorseRaceGameCardHeader>
+    <HorseRaceGameCard class="h-[calc(100%-55px)]">
+        <HorseRaceGameCardHeader class="h-[55px]">
             <template #icon>
                 <ListBulletIcon class="size-8" />
             </template>
@@ -28,7 +61,7 @@ const rows = ref([
                 Horse List ( 1 - 20 )
             </div>
         </HorseRaceGameCardHeader>
-        <HorseRaceGameCardBody>
+        <HorseRaceGameCardBody class="h-full overflow-y-scroll hrg-scroll">
             <SimpleDataTable :items="rows" class="w-full">
                 <template #header class="bg-amber-500 h-5">
                     <tr>
