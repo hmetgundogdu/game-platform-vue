@@ -30,9 +30,9 @@ const allHorses = computed(() => store.getters['horseRaceGame/horses']);
             <SimpleDataTable :items="allHorses" class="w-full">
                 <template #header class="bg-amber-500 h-5">
                     <tr>
-                        <th>At İsmi</th>
-                        <th>Durum</th>
-                        <th>Renk</th>
+                        <th>Name</th>
+                        <th>Condition</th>
+                        <th>Color</th>
                     </tr>
                 </template>
                 <template #row="{ item }">
