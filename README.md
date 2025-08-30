@@ -1,31 +1,28 @@
 # Game Platform (Vue)
 
-Vue 3 + TypeScript + Vite tabanlı **mini oyun platformu**.  
-İlk oyun olarak **At Yarışı (Horse Race Game)** geliştirilmiştir.  
+A **mini game platform** built with Vue 3 + TypeScript + Vite.  
+The first game implemented is **Horse Race Game**.  
 
-## Özellikler
+## Features
 
 - Vue 3 + Vite + TypeScript
-- Feature-based dosya yapısı
-- Vuex ile durum yönetimi
-- Yeniden kullanılabilir UI bileşenleri
-- At Yarışı oyunu:
-  - 20 at havuzu
-  - Rastgele seçilen 10 at ile 6 turluk yarış
-  - Canlı animasyon ve sonuç tablosu
+- Feature-based folder structure
+- State management with Vuex
+- Reusable UI components
+- Horse Race Game:
+  - 20 horse pool
+  - Randomly selected 10 horses for a 6-round race
+  - Live animation and results table
 
-## Önizleme
+## Preview
 
 ![App Screenshot](https://github.com/hmetgundogdu/game-platform-vue/blob/main/docs/screenshots/screenshot.png)
 
-## Kurulum
+## Installation
 
 ```bash
-
-# Bağımlılıkları yükle
-
+# Install dependencies
 yarn
 
-# Geliştirme sunucusu
-
+# Start development server
 yarn dev
